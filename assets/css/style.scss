@@ -1,0 +1,128 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+	background: url('../images/space1.png');
+}
+
+code, pre {
+	font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace !important;
+}
+header h1 {
+	color: #0099CC;
+	text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0;
+}
+
+header p {
+	color: #a2b6c7;
+	display: inline;
+}
+
+header p.view {
+	text-shadow: none;
+}
+header ul li { border-right: none; }
+header ul { background: #084f96; }
+
+nav ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.active {
+	color: #222;
+}
+
+.linkspace {
+	display: inline-block;
+	border-left: 1px solid #aaa;
+	padding-right: 3px;
+}
+
+.less-padding {
+	padding: 5px;
+}
+
+.photo-hint {
+	width: 100%;
+	padding-bottom: 5px;
+	text-align: center;
+}
+.photo-gallery {
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+}
+
+th, td { text-align: left; padding: 3px 4px; border: 1px solid #aaa; }
+
+.photo-gallery a {
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 8px;
+	width: calc(50% - 4px);
+	margin-right: 8px;
+}
+
+.photo-gallery a:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+html, body {
+	background-color: rgb(32, 32, 32);
+	background-image: url(../images/background_iota.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-weight: 400; 
+}
+
+ul#markdown-toc:before {
+	content: 'Contents';
+	color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+ul#markdown-toc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    background: #e6e6e6;
+    padding: 3px;
+    border: 1px solid;
+    text-align: center;
+}
+
+ul#markdown-toc li ul {
+    list-style-type: square;
+    text-align: left;
+}
+
+@media screen and (min-width: 50em) {
+	.photo-gallery a {
+		width: calc(25% - 6px);
+	}
+
+	.photo-gallery a:nth-of-type(2n) {
+		margin-right: 8px;
+	}
+
+	.photo-gallery a:nth-of-type(4n) {
+		margin-right: 0;
+	}
+}
