@@ -1,6 +1,8 @@
 theme: jekyll-theme-modernist
 title: Librelancer
 description: [An open source Freelancer engine re-implementation]
+github:
+  repository_url: https://github.com/Librelancer/Librelancer
 collections:
   screenshots:
 
