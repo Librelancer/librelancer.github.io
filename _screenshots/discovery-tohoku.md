@@ -1,5 +1,5 @@
 ---
-image_path: /assets/screenshots/dsy_tohoku.png
+image_path: dsy_tohoku.png
 title: Tohoku System (Discovery Mod)
 weight: 5
 ---

@@ -51,9 +51,9 @@
       <div class="photo-gallery">
         {% assign screenshot_pages = site.screenshots | sort: 'weight' %}
         {% for image in screenshot_pages %}
-          <a href="{{ image.image_path | prepend:site.baseurl }}">
+          <a href="/assets/screenshots/{{ image.image_path }}">
             <div class = "gallery-image">
-              <img src="{{ image.image_path | prepend:site.baseurl }}" alt="{{ image.title }}">
+              <img src="/assets/screenshots/thumb/{{ image.image_path }}" alt="{{ image.title }}">
             </div>
           </a>
         {% endfor %}

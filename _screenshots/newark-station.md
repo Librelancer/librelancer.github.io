@@ -1,5 +1,5 @@
 ---
-image_path: /assets/screenshots/newark.png
+image_path: newark.png
 title: Newark Station
 weight: 2
 ---
