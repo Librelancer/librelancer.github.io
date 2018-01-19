@@ -1,0 +1,28 @@
+---
+layout: default
+title: Download
+navigation_weight: 2
+---
+<h2>Stable</h2>
+The latest version is <i>2017.10</i><br/>
+It can be downloaded from <a href="https://github.com/Librelancer/Librelancer/releases">Here</a>
+<br/>
+<br/>
+<h2>Daily</h2>
+<div id="dategenerated"></div>
+<a href="https://librelancer.github.io/daily-builds/librelancer-daily-win.zip">Windows</a><br/>
+<a href="https://librelancer.github.io/daily-builds/librelancer-daily-ubuntu-amd64.tar.gz">Linux amd64</a><br/>
+	  
+<script type="text/javascript">
+    window.onload = function(e) {
+	var client = new XMLHttpRequest();
+	client.open('GET', 'https://librelancer.github.io/daily-builds/timestamp');
+	client.onreadystatechange = function() {
+		var unixtime = parseInt(client.responseText);
+		var date = new Date(unixtime*1000);
+		var elem = document.getElementById("dategenerated");
+		elem.innerHTML = "Built: " + date.toString();
+	}
+	client.send();
+}
+</script>
